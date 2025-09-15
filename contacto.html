@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ApplyGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <nav class="nav">
+      <a href="./index.html" class="logo"> <img src="./img/ApplyGoimg.png" alt="ApplyGo"></a>
+     
+      <div class="menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./Sabermas.html">Saber más</a>
+        <a href="contacto.html" class="btn">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>¿Quieres más información sobre nuestros servicios? Completa el formulario y te responderemos lo antes posible.</p>
+
+        <!-- Formulario -->
+        <form id="contact-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+          <button type="submit" class="btn enviar-btn">Enviar</button>
+        </form>
+
+        <!-- Redes -->
+        <div class="social">
+          <p>Síguenos en:</p>
+          <a href="https://linkedin.com/" target="_blank">🔗 LinkedIn</a> |
+          <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> ApplyGo - Servicio de difusión y pre-selección.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("TU_USER_ID"); // ⚡️ Reemplaza con tu User ID de EmailJS
+    })();
+
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+        .then(function () {
+          alert('✅ Mensaje enviado con éxito. ¡Gracias por contactarnos!');
+          form.reset();
+        }, function (error) {
+          alert('❌ Error al enviar. Intenta de nuevo.');
+          console.error('Error:', error);
+        });
+    });
+  </script>
+
+</body>
+</html>

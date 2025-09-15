@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" class="sabermas-only">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber más - ApplyGo</title>
+  <meta name="description" content="Descubre cómo ApplyGo te ayuda en la publicación de ofertas y preselección de candidatos para tu empresa.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="nav">
+      <a href="./index.html" class="logo"><img src="./img/ApplyGoimg.png" alt="Logo ApplyGo"></a>
+      <div class="menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./Sabermas.html" class="active">Saber más</a>
+        <a href="./contacto.html" class="btn">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero hero--secondary" data-aos="fade-up">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Cómo funciona nuestro servicio</h1>
+      <p class="hero-text">Con ApplyGo simplificas tu proceso de reclutamiento: publicamos, filtramos y entregamos los mejores perfiles, adaptados a tu empresa.</p>
+      <a href="contacto.html" class="btn btn-lg" role="button" aria-label="Solicitar más información sobre ApplyGo">Quiero más información</a>
+    </div>
+  </div>
+</section>
+
+  <!-- PROCESO DETALLADO -->
+  <section class="proceso section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Proceso paso a paso</h2>
+      <ol class="steps">
+        <li data-aos="fade-right">
+          <h4>1) Recibimos tu oferta</h4>
+          <p>Envíanos la descripción del puesto, requisitos y condiciones, y nos encargamos del resto.</p>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="150">
+          <h4>2) Publicamos en múltiples portales</h4>
+          <p>Difusión en Indeed, LinkedIn, InfoJobs, Computrabajo, Job Today y redes sociales.</p>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="300">
+          <h4>3) Filtramos candidatos</h4>
+          <p>Revisamos los CVs, descartamos perfiles que no cumplen los requisitos y seleccionamos los más adecuados.</p>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="450">
+          <h4>4) Entrega de shortlist</h4>
+          <p>Recibes una lista de candidatos óptimos para entrevistar, lista para contratar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS DETALLADOS -->
+  <section class="features section section--alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Ventajas para tu empresa</h2>
+      <div class="grid-3">
+        <article class="feature" data-aos="zoom-in">
+          <div class="icon">🚀</div>
+          <h3>Mayor alcance</h3>
+          <p>Llegamos a más candidatos publicando tu oferta en distintos canales de empleo y redes sociales.</p>
+        </article>
+        <article class="feature" data-aos="zoom-in" data-aos-delay="150">
+          <div class="icon">🎯</div>
+          <h3>Perfiles adecuados</h3>
+          <p>Recibes solo candidatos que cumplen los requisitos exactos del puesto.</p>
+        </article>
+        <article class="feature" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon">💼</div>
+          <h3>Ahorro de tiempo</h3>
+          <p>Delegas la fase inicial de selección y te concentras en entrevistas y contratación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> ApplyGo - Servicio de difusión y pre-selección.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="index-only">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApplyGo - Inicio</title>
+  <meta name="description"
+    content="ApplyGo publica tus vacantes y filtra candidatos para que solo recibas los mejores perfiles.">
+
+  <!-- Fonts y CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="nav">
+      <a href="./index.html" class="logo">
+        <img src="./img/ApplyGoimg.png" alt="Logo ApplyGo">
+      </a>
+      <div class="menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./Sabermas.html">Saber más</a>
+        <a href="./contacto.html" class="btn" role="button" aria-label="Ir a la página de contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Impulsamos tu proceso de selección</h1>
+      <p>Publicamos tus vacantes en los principales portales de empleo y filtramos a los mejores candidatos para que
+        solo recibas lo que importa.</p>
+      <a href="contacto.html" class="btn btn-lg" role="button" aria-label="Quiero más información sobre ApplyGo">Quiero
+        más información</a>
+    </div>
+  </section>
+
+<!-- SOBRE APPLYGO -->
+<section class="sobre-applygo" data-aos="fade-up">
+  <div class="sobre-applygo-container">
+    <h2>Quiénes somos</h2>
+    <p>ApplyGo es la plataforma que facilita la selección de talento, conectando empresas con los mejores candidatos.</p>
+    <p>Publicamos tus vacantes en los principales portales de empleo y filtramos cuidadosamente los CVs.</p>
+    <p>Solo recibirás los perfiles que realmente encajan con tus necesidades, ahorrando tiempo y recursos.</p>
+    <p>Nuestro proceso es transparente, eficiente y adaptable a cualquier tipo de empresa.</p>
+    <p>Con ApplyGo, tu empresa puede concentrarse en crecer mientras nosotros nos encargamos de encontrar el mejor talento.</p>
+  </div>
+</section>
+
+
+  <!-- BENEFICIOS RESUMIDOS -->
+  <section class="beneficios">
+    <h2 data-aos="fade-up">Por qué elegir ApplyGo</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>📢 Difusión</h3>
+        <p>Publicamos tus vacantes en los principales portales de empleo.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>✅ Preselección</h3>
+        <p>Filtramos los CVs y solo recibes los que realmente encajan.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>⏳ Ahorro</h3>
+        <p>Olvídate de perder tiempo revisando cientos de solicitudes.</p>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="600" style="margin-top: 25px;">
+      <a href="Sabermas.html" class="btn btn-lg" role="button" aria-label="Ver proceso completo de ApplyGo">Ver proceso
+        completo</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> ApplyGo - Difusión y preselección de talento.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({ duration: 800, once: true });
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+
+</html>
