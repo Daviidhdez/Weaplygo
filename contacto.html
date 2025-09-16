@@ -73,14 +73,14 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
-      emailjs.init("vp09Ll1oQor2Xg3jQ"); // ⚡️ Reemplaza con tu User ID de EmailJS
+      emailjs.init(""); // ⚡️ Reemplaza con tu User ID de EmailJS
     })();
 
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      emailjs.sendForm('service_WeApplygo', 'template_WeApplygo', this)
+      emailjs.sendForm('', '', this)
         .then(function () {
           alert('✅ Mensaje enviado con éxito. ¡Gracias por contactarnos!');
           form.reset();
