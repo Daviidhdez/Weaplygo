@@ -555,17 +555,23 @@ footer {
   padding: 35px 15px;
 }
 
-footer .social a img {
-  width: 28px;
-  margin: 0 8px;
-  opacity: 0.8;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+/* Estilo del correo en el footer */
+footer p.email {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #F0F0F0; /* Texto claro que combine con el fondo */
 }
 
-footer .social a img:hover {
-  transform: scale(1.1);
-  opacity: 1;
+footer p.email a {
+  color: #86a5ce; /* Azul destacado para el enlace */
+  text-decoration: none;
+  font-weight: bold;
 }
+
+footer p.email a:hover {
+  text-decoration: underline;
+}
+
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
