@@ -11,13 +11,19 @@
 <body>
 <header>
     <nav class="nav">
-      <a href="./index.html" class="logo"> <img src="./img/ApplyGoimg.png" alt="ApplyGo"></a>
-     
-      <div class="menu">
-        <a href="./index.html">Inicio</a>
+      <a href="./index.html" class="logo">
+       WeApplyGo
+      </a>
+       <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <div class="menu" id="menu">
+      <a href="./index.html">Inicio</a>
         <a href="./Sabermas.html">Saber más</a>
-        <a href="contacto.html" class="btn">Contacto</a>
-      </div>
+        <a href="./contacto.html" class="btn" role="button" aria-label="Ir a la página de contacto">Contacto</a>
+    </div>
     </nav>
   </header>
 
@@ -41,19 +47,13 @@
           <button type="submit" class="btn enviar-btn">Enviar</button>
         </form>
 
-        <!-- Redes -->
-        <div class="social">
-          <p>Síguenos en:</p>
-          <a href="https://linkedin.com/" target="_blank">🔗 LinkedIn</a> |
-          <a href="https://github.com/" target="_blank">🐙 GitHub</a>
-        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> ApplyGo - Servicio de difusión y pre-selección.</p>
+    <p>© <span id="year"></span> WeApplyGo - Servicio de difusión y pre-selección.</p>
   </footer>
 
   <script>
@@ -61,6 +61,14 @@
   </script>
 
   <!-- EmailJS -->
+       <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const hamburger = document.querySelector(".hamburger");
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  }
+</script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {

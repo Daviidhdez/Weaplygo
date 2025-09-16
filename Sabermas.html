@@ -11,14 +11,21 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header>
+ <header>
     <nav class="nav">
-      <a href="./index.html" class="logo"><img src="./img/ApplyGoimg.png" alt="Logo ApplyGo"></a>
-      <div class="menu">
-        <a href="./index.html">Inicio</a>
-        <a href="./Sabermas.html" class="active">Saber más</a>
-        <a href="./contacto.html" class="btn">Contacto</a>
-      </div>
+      <a href="./index.html" class="logo">
+       WeApplyGo
+      </a>
+       <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <div class="menu" id="menu">
+      <a href="./index.html">Inicio</a>
+        <a href="./Sabermas.html">Saber más</a>
+        <a href="./contacto.html" class="btn" role="button" aria-label="Ir a la página de contacto">Contacto</a>
+    </div>
     </nav>
   </header>
 
@@ -86,11 +93,19 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> ApplyGo - Servicio de difusión y pre-selección.</p>
+      <p>© <span id="year"></span> WeApplyGo - Servicio de difusión y pre-selección.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const hamburger = document.querySelector(".hamburger");
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  }
+</script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
