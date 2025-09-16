@@ -12,7 +12,7 @@
 <header>
     <nav class="nav">
       <a href="./index.html" class="logo">
-       WeApplyGo
+       Applygo Service
       </a>
        <div class="hamburger" onclick="toggleMenu()">
       <span></span>
@@ -53,8 +53,9 @@
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> WeApplyGo - Servicio de difusión y pre-selección.</p>
-  </footer>
+  <p>© <span id="year"></span> WeApplyGo - Servicio de difusión y pre-selección.</p>
+  <p>Correo Electronico: <a href="mailto:applygoservice@gmail.com">applygoservice@gmail.com</a></p>
+</footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -72,14 +73,14 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
-      emailjs.init("TU_USER_ID"); // ⚡️ Reemplaza con tu User ID de EmailJS
+      emailjs.init("vp09Ll1oQor2Xg3jQ"); // ⚡️ Reemplaza con tu User ID de EmailJS
     })();
 
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+      emailjs.sendForm('service_WeApplygo', 'template_WeApplygo', this)
         .then(function () {
           alert('✅ Mensaje enviado con éxito. ¡Gracias por contactarnos!');
           form.reset();
